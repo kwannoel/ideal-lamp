@@ -2,7 +2,23 @@
 
 Code for: https://blog.openzeppelin.com/a-gentle-introduction-to-ethereum-programming-part-1-783cc7796094/
 
+## Run Examples
+
+`Basic interaction on ETH testnet`
+``` sh
+yarn testrpc &
+yarn interact
+```
+
+`Basic Contract interaction`
+
+``` sh
+
+```
+
 ## Notes
+
+### Part 1
 
 EVM is sandboxed runtime. It is an isolated environment for smart contracts in Ethereum. Smart contracts on EVM have no access to network, file system / other processes.
 
@@ -23,3 +39,9 @@ Accounts:
 2. Contract accounts (controlled by code stored in it).
 
 Only external accounts can initiate transactions.
+
+### Part 2
+
+Usecases for smart contracts:
+1. Crowdfunding tools: ICOs
+2. token sales
