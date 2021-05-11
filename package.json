@@ -5,10 +5,13 @@
   "license": "MIT",
   "dependencies": {
     "ethereumjs-testrpc": "^6.0.3",
+    "solc": "^0.4.0",
     "web3": "0.20.1"
   },
   "scripts": {
-    "interact": "node interaction.js",
+    "demo-basic": "node interaction.js",
+    "compile-contract": "solcjs MyToken.sol --bin && solcjs MyToken.sol --abi",
+    "demo-contract": "node run-contract.js",
     "testrpc": "testrpc --port 5432"
   }
 }

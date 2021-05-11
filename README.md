@@ -7,13 +7,14 @@ Code for: https://blog.openzeppelin.com/a-gentle-introduction-to-ethereum-progra
 `Basic interaction on ETH testnet`
 ``` sh
 yarn testrpc &
-yarn interact
+yarn demo-basic
 ```
 
 `Basic Contract interaction`
 
 ``` sh
-
+yarn testrpc &
+yarn demo-contract
 ```
 
 ## Notes
@@ -45,3 +46,10 @@ Only external accounts can initiate transactions.
 Usecases for smart contracts:
 1. Crowdfunding tools: ICOs
 2. token sales
+
+Tokens aka Digital Asset: Analgous to vouchers. You can create your own, and set the rules for redemption.
+Sold in ICOs, e.g. I sell 50,000 giraffe tokens for 1 ETH.
+
+`msg.sender` address where external function call to contract came from.
+
+`constant` functions: no state changes. E.g. read-only functions. `non-constant` functions may update state of contract account.
