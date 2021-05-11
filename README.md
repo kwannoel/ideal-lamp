@@ -53,3 +53,5 @@ Sold in ICOs, e.g. I sell 50,000 giraffe tokens for 1 ETH.
 `msg.sender` address where external function call to contract came from.
 
 `constant` functions: no state changes. E.g. read-only functions. `non-constant` functions may update state of contract account.
+
+Contract takes time to deploy. Don't expect instant success when transacting. You can replicate `stack underflow` by running it with `0` delay in `run-contract.js`
